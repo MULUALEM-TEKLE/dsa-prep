@@ -12,4 +12,8 @@ class Solution:
                 if nums[j] < nums[i] : 
                     output[i] += 1
         return output
+""" 
+Input: nums = [8,1,2,2,3]
+Output: [4,0,1,1,3]
+ """
         

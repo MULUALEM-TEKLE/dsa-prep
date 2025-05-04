@@ -1,7 +1,7 @@
 """
 https://leetcode.com/problems/reorganize-string/description/
 """
-
+# time limit exceeded
 def reorganizeString( s: str):
     word = list(s)
     print(word)

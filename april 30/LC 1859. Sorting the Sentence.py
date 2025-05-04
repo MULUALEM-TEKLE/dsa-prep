@@ -11,4 +11,7 @@ class Solution:
             ordered_sentence_list[int(word[-1]) -1] = word[:-1]
         return " ".join(ordered_sentence_list)
 
-        
+        """
+        Input: s = "is2 sentence4 This1 a3"
+        Output: "This is a sentence"
+        """
