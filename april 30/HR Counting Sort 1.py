@@ -41,12 +41,6 @@
         if count[i] > 1 : return i 
  """
 
- def two_pointer_sol(arr):
-    # arr.sort()
-    left = 0
-    for right in range(1, len(arr)):
-        if arr[right] == arr[right-1]:
-            return arr[right]
 
         
 
