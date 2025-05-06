@@ -8,7 +8,7 @@ def merge(arr_one, arr_two):
     temp_ctr = 0
     arr_one_ptr = 0
     arr_two_ptr = 0
-    
+
     while arr_one_ptr < len(arr_one) and arr_two_ptr < len(arr_two):
         if arr_one[arr_one_ptr] > arr_two[arr_two_ptr] :
             temp[temp_ctr] = arr_two[arr_two_ptr]
@@ -33,22 +33,22 @@ def merge(arr_one, arr_two):
     return temp
        
 
-def merge_sort(arr) : 
-    # print(arr)
-    if len(arr) == 1:
+def merge_sort(arr,) : 
+
+    if len(arr) <= 1:
         return arr
     
-    mid_pt = math.floor(len(arr)/2)
+    mid_pt = len(arr)//2
     # print(f"mid point is {mid_pt}")
-    arr_one = merge_sort(arr[:mid_pt])
-    arr_two =merge_sort(arr[mid_pt  :  len(arr)])
+    arr_one = merge_sort(arr[ : mid_pt])
+    arr_two =merge_sort(arr[mid_pt : ])
 
     return merge(arr_one, arr_two)
 
 if __name__ == "__main__":
     # Create a large unsorted array
-    large_array_size = 100000  # Adjust the size as needed
-    large_array = [random.randint(0, 1000000) for _ in range(large_array_size)]
+    large_array_size = 10  # Adjust the size as needed
+    large_array = [random.randint(0, 10) for _ in range(large_array_size)]
 
     # Create a copy to test against Python's built-in sort
     python_sorted_array = sorted(large_array)
