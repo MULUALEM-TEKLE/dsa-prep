@@ -1,7 +1,7 @@
 """
 https://leetcode.com/problems/k-closest-points-to-origin/description/
 """
-# time limit exeeded
+
 class Solution:
     def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
         sqrt_list = [(i[0]**2 + i[1]**2) for i in points]
