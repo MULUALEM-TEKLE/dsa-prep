@@ -16,3 +16,6 @@ class Solution:
                 target_array.append(i)
         
         return target_array
+    
+        # or
+        # return [ i for i, num in enumerate(sorted(nums)) if num == target]
