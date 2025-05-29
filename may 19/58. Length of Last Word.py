@@ -4,5 +4,11 @@ https://leetcode.com/problems/length-of-last-word/description/
 
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:  
-        return len([s for s in s.split(" ") if s != ""][-1]) 
-       
+        counter = 0 
+        for i in range(len(s)-1 , -1 , -1 ) : 
+            if s[i] == " " and counter :
+                return counter 
+            elif s[i] != " " :
+                counter += 1  
+
+        return counter

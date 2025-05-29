@@ -13,3 +13,7 @@ def insert(root, val):
         root.left = insert(root.left, val)
         
     return root
+
+""" 
+4       
+ """
